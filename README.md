@@ -6,17 +6,17 @@ Nahisage 是一款本地 LaTeX 论文编辑器。你可以在分页纸张上直�
 
 喜欢直观写作，就在纸张上改；需要精细控制，就打开源码。两种方式围绕同一份文档工作，文件仍以 `.tex` 形式保存。
 
-**Windows x64 正式版 v1.0.0 已开放下载。**
+**Windows x64 正式版 v1.1.0 已开放下载。**
 
-[下载 Windows x64 安装包](https://github.com/Henrystation/Nahisage/releases/download/v1.0.0/Nahisage-Setup-1.0.0-x64.exe) · [版本说明、已知限制与 SHA-256 校验文件](https://github.com/Henrystation/Nahisage/releases/tag/v1.0.0)
+[下载 Windows x64 安装包](https://github.com/Henrystation/Nahisage/releases/download/v1.1.0/Nahisage-Setup-1.1.0-x64.exe) · [版本说明、已知限制与 SHA-256 校验文件](https://github.com/Henrystation/Nahisage/releases/tag/v1.1.0)
 
 建议先使用论文副本体验。安装包未签名。无需提前安装 TeX：软件内提供环境检查和两步安装指引，已有可用环境也可直接接入。请下载 `.exe` 安装包；GitHub 自动生成的 Source code 压缩包仅包含本公开介绍仓库的内容。
 
 ## 实机界面展示
 
-左侧是 LaTeX 源码，右侧是可直接编辑的分页纸张；在支持的内容范围内，两侧修改会同步到同一份文档。
+下图为 1.1.0 实际打包版运行界面：左侧是可编辑纸张，右侧是当前内容编译后的 PDF，使用自编演示文档。也可切换为源码与可视化并排编辑。
 
-![Nahisage 实机界面：LaTeX 源码与可视化分页纸张并排编辑](https://github.com/user-attachments/assets/89e47fed-7f00-4fe7-9864-30ca879eba7d)
+![Nahisage 1.1.0：TikZ、算法与简洁 PDF 底栏](https://github.com/Henrystation/Nahisage/releases/download/v1.1.0/Nahisage-1.1.0-preview.png)
 
 ## 写论文时，它能帮你做什么？
 
@@ -29,6 +29,12 @@ Nahisage 是一款本地 LaTeX 论文编辑器。你可以在分页纸张上直�
 ### 常见修改不用每次都手写命令
 
 通过顶部工具栏完成常用编辑操作，包括选区字体和字号、段落设置，以及支持的公式、图片和基础表格编辑。需要直接调整命令时，也可以打开局部源码。
+
+### 1.1.0：图形、算法和论文分栏
+
+在「插入」页直接创建 TikZ 流程图、折线示意图和算法，在「页面 → 论文分栏」调整全篇默认栏数与栏间距。新设置窗口统一使用「确定／取消」，生成对象支持再次编辑，复杂自定义对象保留局部源码入口。
+
+已验证的 IEEE、Elsevier、RevTeX 等样例支持双栏与局部通栏对应；多文件工程可按引用顺序整篇浏览，点击章节切换到所属文件编辑，未保存子文件参与当前编译，各文件分别保存。右侧单行底栏显示排版状态，详情向上展开，不挤动纸张位置。
 
 ### 继续保留写 LaTeX 的习惯
 
@@ -57,7 +63,7 @@ Nahisage 是一款本地 LaTeX 论文编辑器。你可以在分页纸张上直�
 
 ## 当前支持范围
 
-可视化编辑主要覆盖已支持的常见文档结构。复杂宏、自定义环境、跨页复杂表格，以及部分双栏版式，可能仍需要通过源码修改和最终 PDF 检查。
+可视化覆盖已支持的常见结构和已验证的复杂双栏、多文件样例。任意自定义文档类、动态宏与动态文件引用不作完全兼容保证；复杂对象可通过局部源码修改，TikZ 不提供任意节点拖拽设计器。子文件缺少必要宏包时需先处理主文件依赖，提交前请核对当前编译的 PDF。
 
 编辑区的分页与真实 LaTeX 编译结果可能存在差异，目前不承诺任意模板都能完整可视化，或编辑页面与最终 PDF 完全一致。
 
