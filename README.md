@@ -85,6 +85,12 @@ Nahisage 是一款本地 LaTeX 论文编辑器。你可以在分页纸张上直�
 
 ## 反馈问题
 
+欢迎加入微信反馈群 **Nahisage用户feedback**。如果你在写论文时遇到排版、编译或编辑问题，或有希望加入的功能，可以在群里告诉我们。
+
+<img src="images/feedback-wechat.png" width="270" alt="Nahisage 用户反馈微信群二维码">
+
+用微信扫码，或保存图片后在微信「扫一扫」里从相册选择。**本期二维码在 2026 年 11 月 24 日前有效**。过期后请回到本页查看新码，也可以通过 [GitHub Issues](https://github.com/Henrystation/Nahisage/issues) 反馈。
+
 欢迎通过本仓库的 Issues 提交问题或建议。描述时尽量提供：
 
 - 软件版本、Windows 版本，以及使用的 TeX 发行版。
